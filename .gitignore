@@ -1,0 +1,13 @@
+__pycache__/
+*.py[cod]
+.DS_Store
+Thumbs.db
+
+# Never commit the private full release from the repository root.
+/rgb/
+/depth_16bit/
+/label.json
+/sft.json
+/train.json
+/val.json
+/test.json

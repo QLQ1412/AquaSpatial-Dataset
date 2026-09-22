@@ -1,0 +1,642 @@
+[
+  {
+    "images": [
+      "samples/rgb/rgb_000027.jpg",
+      "samples/depth_16bit/depth_000027.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a red buoy. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe nothing. Localization: []."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_000104.jpg",
+      "samples/depth_16bit/depth_000104.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a black buoy. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a red bottle, a green bottle, a green buoy and a black buoy. Localization: [target: black buoy, (3.06,-0.67)], [obstacle: red bottle, (0.82,-0.05)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_000246.jpg",
+      "samples/depth_16bit/depth_000246.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a yellow buoy. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a red buoy, a yellow buoy, a blue bottle and a red bottle. Localization: [target: yellow buoy, (0.92,-0.01)], [obstacle: red buoy, (0.90,-0.04)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_000369.jpg",
+      "samples/depth_16bit/depth_000369.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a blue and black foam. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a black buoy, a green bottle, a red bottle and a yellow buoy. Localization: [obstacle: black buoy, (1.27,0.05)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_000559.jpg",
+      "samples/depth_16bit/depth_000559.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a black buoy. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a red buoy, a green bottle, a green buoy, a red bottle, a yellow buoy and a black buoy. Localization: [target: black buoy, (3.71,-0.03)], [obstacle: red buoy, (0.75,-0.29)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_000730.jpg",
+      "samples/depth_16bit/depth_000730.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a green bottle. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe nothing. Localization: []."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_000834.jpg",
+      "samples/depth_16bit/depth_000834.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a little yellow duck. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a white foam, a green buoy, a red bottle, a black buoy and a paper bowl. Localization: [obstacle: white foam, (0.87,-0.09)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_000982.jpg",
+      "samples/depth_16bit/depth_000982.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a black buoy. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a black buoy and a black foam. Localization: [target: black buoy, (0.86,-0.07)], [obstacle: black foam, (2.30,0.14)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_001127.jpg",
+      "samples/depth_16bit/depth_001127.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a yellow buoy. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a green buoy and a yellow buoy. Localization: [target: yellow buoy, (3.22,-0.17)], [obstacle: green buoy, (2.09,0.03)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_001350.jpg",
+      "samples/depth_16bit/depth_001350.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a pop can. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a blue bottle and a plastic bag. Localization: [obstacle: blue bottle, (1.60,0.53)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_001428.jpg",
+      "samples/depth_16bit/depth_001428.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a yellow buoy. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a blue bottle, a green buoy, a yellow buoy and a little yellow duck. Localization: [target: yellow buoy, (2.65,0.26)], [obstacle: blue bottle, (0.95,0.06)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_001530.jpg",
+      "samples/depth_16bit/depth_001530.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a red buoy. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a red buoy. Localization: [target: red buoy, (1.35,-0.04)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_001673.jpg",
+      "samples/depth_16bit/depth_001673.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a blue bottle. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a yellow buoy. Localization: [obstacle: yellow buoy, (1.44,0.00)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_001801.jpg",
+      "samples/depth_16bit/depth_001801.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a pop can. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a yellow buoy, a little yellow duck, a paper bowl and a white foam. Localization: [obstacle: yellow buoy, (0.91,0.24)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_001878.jpg",
+      "samples/depth_16bit/depth_001878.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a plastic bag. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a paper box. Localization: [obstacle: paper box, (1.00,-0.01)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_002019.jpg",
+      "samples/depth_16bit/depth_002019.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a paper box. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a pop can, a green bottle and a paper box. Localization: [target: paper box, (2.13,-0.06)], [obstacle: pop can, (1.73,0.19)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_002114.jpg",
+      "samples/depth_16bit/depth_002114.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a green bottle. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a paper box and a green bottle. Localization: [target: green bottle, (1.45,-0.11)], [obstacle: paper box, (1.44,-0.02)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_002242.jpg",
+      "samples/depth_16bit/depth_002242.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a paper bowl. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a paper bowl. Localization: [target: paper bowl, (1.49,-0.03)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_002370.jpg",
+      "samples/depth_16bit/depth_002370.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a paper box. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a branch and a paper box. Localization: [target: paper box, (0.96,-0.36)], [obstacle: branch, (0.40,-0.12)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_002479.jpg",
+      "samples/depth_16bit/depth_002479.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a blue and black foam. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a blue and black foam. Localization: [target: blue and black foam, (1.95,-0.06)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_002638.jpg",
+      "samples/depth_16bit/depth_002638.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a red bottle. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a red bottle. Localization: [target: red bottle, (2.29,0.03)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_002796.jpg",
+      "samples/depth_16bit/depth_002796.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a grey foam. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a grey foam. Localization: [target: grey foam, (1.11,-0.00)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_002938.jpg",
+      "samples/depth_16bit/depth_002938.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a paper bowl. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a paper bowl. Localization: [target: paper bowl, (1.19,-0.02)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_003047.jpg",
+      "samples/depth_16bit/depth_003047.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a paper bowl. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a white foam and a paper bowl. Localization: [target: paper bowl, (2.56,0.52)], [obstacle: white foam, (2.40,0.07)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_003154.jpg",
+      "samples/depth_16bit/depth_003154.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a little yellow duck. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a grey foam, a red buoy and a pop can. Localization: [obstacle: grey foam, (1.20,-0.27)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_003292.jpg",
+      "samples/depth_16bit/depth_003292.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a paper bowl. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a paper bowl. Localization: [target: paper bowl, (0.99,-0.02)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_003401.jpg",
+      "samples/depth_16bit/depth_003401.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a yellow buoy. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a green buoy and a red bottle. Localization: [obstacle: green buoy, (2.85,-0.01)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_003517.jpg",
+      "samples/depth_16bit/depth_003517.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a black buoy. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a paper bowl, a black buoy and a blue and black foam. Localization: [target: black buoy, (2.78,-0.17)], [obstacle: paper bowl, (1.04,0.20)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_003688.jpg",
+      "samples/depth_16bit/depth_003688.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a blue and black foam. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a blue and black foam and a green buoy. Localization: [target: blue and black foam, (1.32,-0.22)], [obstacle: green buoy, (1.91,0.11)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_003789.jpg",
+      "samples/depth_16bit/depth_003789.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a red bottle. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a red bottle. Localization: [target: red bottle, (1.39,-0.05)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_003901.jpg",
+      "samples/depth_16bit/depth_003901.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a blue and black foam. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a red bottle and a blue and black foam. Localization: [target: blue and black foam, (3.04,0.20)], [obstacle: red bottle, (2.18,0.04)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_003984.jpg",
+      "samples/depth_16bit/depth_003984.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a red bottle. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe nothing. Localization: []."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_004034.jpg",
+      "samples/depth_16bit/depth_004034.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a red bottle. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe nothing. Localization: []."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_004162.jpg",
+      "samples/depth_16bit/depth_004162.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a grey foam. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a pop can and a paper bowl. Localization: [obstacle: pop can, (0.93,-0.02)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_004199.jpg",
+      "samples/depth_16bit/depth_004199.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a plastic bag. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a branch and a plastic bag. Localization: [target: plastic bag, (1.16,0.14)], [obstacle: branch, (0.70,0.08)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_004231.jpg",
+      "samples/depth_16bit/depth_004231.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a little yellow duck. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a little yellow duck. Localization: [target: little yellow duck, (1.31,0.07)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_004476.jpg",
+      "samples/depth_16bit/depth_004476.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a green bottle. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a plastic bag, a white foam and a grey foam. Localization: [obstacle: plastic bag, (1.00,-0.47)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_004545.jpg",
+      "samples/depth_16bit/depth_004545.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a grey foam. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a grey foam, a white foam and a blue bottle. Localization: [target: grey foam, (1.46,-0.21)], [obstacle: white foam, (1.56,-0.07)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_004745.jpg",
+      "samples/depth_16bit/depth_004745.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a blue bottle. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a blue bottle. Localization: [target: blue bottle, (2.34,-0.11)]."
+      }
+    ]
+  },
+  {
+    "images": [
+      "samples/rgb/rgb_004970.jpg",
+      "samples/depth_16bit/depth_004970.png"
+    ],
+    "conversations": [
+      {
+        "from": "human",
+        "value": "You are a water surface robot. <image>\nImage 1 is RGB image. <image>\nImage 2 is depth image. Your task is to navigate to a red bottle. Identify objects in the RGB image and output the positions of the nearest target and the nearest obstacle."
+      },
+      {
+        "from": "gpt",
+        "value": "Perception: I observe a red bottle, a pop can, a paper bowl and a blue bottle. Localization: [target: red bottle, (1.15,-0.23)], [obstacle: pop can, (1.23,-0.11)]."
+      }
+    ]
+  }
+]

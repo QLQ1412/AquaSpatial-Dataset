@@ -7,7 +7,7 @@
 [![Preview pairs](https://img.shields.io/badge/public_preview-40_pairs-2ca02c)](#preview-release)
 [![License](https://img.shields.io/badge/license-MIT-lightgrey)](LICENSE)
 
-AquaSpatial is an RGB-D dataset designed for spatial perception and instruction following by water-surface robots. Each scene combines a synchronized RGB image and 16-bit depth image with object-level annotations and a vision-language navigation instruction. The task requires a model to recognize visible objects and localize the nearest requested target and the nearest obstacle in metric coordinates.
+AquaSpatial is an RGB-D dataset designed for spatial perception and instruction following by water-surface robots. Each scene combines synchronized RGB and depth images with object-level annotations and a vision-language navigation instruction. The task requires a model to recognize visible objects and localize the nearest requested target and the nearest obstacle in metric coordinates.
 
 ## Release Status
 
@@ -25,7 +25,7 @@ AquaSpatial is an RGB-D dataset designed for spatial perception and instruction 
 | Object categories | 17 |
 | Objects per scene | 0-6 |
 | RGB format | JPEG, 640 x 480 |
-| Depth format | 16-bit PNG, 640 x 480 |
+| Depth format | PNG, 640 x 480 |
 | Depth unit | millimetres |
 | Annotation outputs | 2D box, center point, depth, distance, direction, azimuth, 3D point |
 | SFT inputs | RGB image + depth image + navigation instruction |
@@ -48,10 +48,10 @@ The public preview contains 40 RGB-D pairs selected to preserve the full dataset
 
 <table>
   <tr>
-    <td align="center"><img src="samples/rgb/rgb_000104.jpg" width="220"><br><sub>Scene 104 | <a href="samples/depth_16bit/depth_000104.png">16-bit depth</a></sub></td>
-    <td align="center"><img src="samples/rgb/rgb_000559.jpg" width="220"><br><sub>Scene 559 | <a href="samples/depth_16bit/depth_000559.png">16-bit depth</a></sub></td>
-    <td align="center"><img src="samples/rgb/rgb_002242.jpg" width="220"><br><sub>Scene 2242 | <a href="samples/depth_16bit/depth_002242.png">16-bit depth</a></sub></td>
-    <td align="center"><img src="samples/rgb/rgb_003517.jpg" width="220"><br><sub>Scene 3517 | <a href="samples/depth_16bit/depth_003517.png">16-bit depth</a></sub></td>
+    <td align="center"><img src="samples/rgb/rgb_000104.jpg" width="220"><br><sub>Scene 104 | <a href="samples/depth_16bit/depth_000104.png">depth</a></sub></td>
+    <td align="center"><img src="samples/rgb/rgb_000559.jpg" width="220"><br><sub>Scene 559 | <a href="samples/depth_16bit/depth_000559.png">depth</a></sub></td>
+    <td align="center"><img src="samples/rgb/rgb_002242.jpg" width="220"><br><sub>Scene 2242 | <a href="samples/depth_16bit/depth_002242.png">depth</a></sub></td>
+    <td align="center"><img src="samples/rgb/rgb_003517.jpg" width="220"><br><sub>Scene 3517 | <a href="samples/depth_16bit/depth_003517.png">depth</a></sub></td>
   </tr>
 </table>
 
@@ -59,14 +59,14 @@ The public preview contains 40 RGB-D pairs selected to preserve the full dataset
 
 <table>
   <tr>
-    <td align="center"><img src="samples/rgb/rgb_004162.jpg" width="220"><br><sub>Scene 4162 | <a href="samples/depth_16bit/depth_004162.png">16-bit depth</a></sub></td>
-    <td align="center"><img src="samples/rgb/rgb_004199.jpg" width="220"><br><sub>Scene 4199 | <a href="samples/depth_16bit/depth_004199.png">16-bit depth</a></sub></td>
-    <td align="center"><img src="samples/rgb/rgb_004545.jpg" width="220"><br><sub>Scene 4545 | <a href="samples/depth_16bit/depth_004545.png">16-bit depth</a></sub></td>
-    <td align="center"><img src="samples/rgb/rgb_004970.jpg" width="220"><br><sub>Scene 4970 | <a href="samples/depth_16bit/depth_004970.png">16-bit depth</a></sub></td>
+    <td align="center"><img src="samples/rgb/rgb_004162.jpg" width="220"><br><sub>Scene 4162 | <a href="samples/depth_16bit/depth_004162.png">depth</a></sub></td>
+    <td align="center"><img src="samples/rgb/rgb_004199.jpg" width="220"><br><sub>Scene 4199 | <a href="samples/depth_16bit/depth_004199.png">depth</a></sub></td>
+    <td align="center"><img src="samples/rgb/rgb_004545.jpg" width="220"><br><sub>Scene 4545 | <a href="samples/depth_16bit/depth_004545.png">depth</a></sub></td>
+    <td align="center"><img src="samples/rgb/rgb_004970.jpg" width="220"><br><sub>Scene 4970 | <a href="samples/depth_16bit/depth_004970.png">depth</a></sub></td>
   </tr>
 </table>
 
-Raw 16-bit depth PNGs may look dark in standard image viewers because their values encode metric depth rather than display intensity. See [Quick Start](#quick-start) for loading and visualization.
+Depth values are stored in millimetres and can be loaded or visualized with the example in [Quick Start](#quick-start).
 
 ## Repository Structure
 
@@ -76,7 +76,7 @@ AquaSpatial-Dataset/
 |-- LICENSE
 |-- samples/
 |   |-- rgb/                 # 40 RGB JPEG images
-|   |-- depth_16bit/         # 40 aligned uint16 depth PNG images
+|   |-- depth_16bit/         # 40 aligned depth PNG images
 |   |-- label_sample.json    # Object-level labels for the preview scenes
 |   |-- sft_sample.json      # Portable RGB-D instruction conversations
 |   `-- manifest.csv         # Scene metadata and SHA-256 checksums
@@ -118,17 +118,6 @@ Each record in `samples/label_sample.json` has two image names and a list of obj
 | `direction` | Horizontal direction (`left` or `right`) |
 | `azimuth_deg` | Horizontal azimuth; positive values point left |
 | `point_3d` | Camera-frame point `[x, y, z]` in metres |
-
-The camera-frame convention uses `x` for lateral displacement (negative left, positive right), `y` for vertical displacement, and `z` for forward depth. Spatial quantities are derived using:
-
-```text
-x = (u - cx) * z / fx
-y = (v - cy) * z / fy
-distance = sqrt(x^2 + z^2)
-azimuth = atan2(-x, z)
-```
-
-Camera intrinsics used during annotation processing are `fx = 606.416`, `fy = 606.030`, `cx = 330.146`, and `cy = 252.912`.
 
 ## SFT Format
 
@@ -206,7 +195,7 @@ print(sample["conversations"][1]["value"])
 python scripts/prepare_preview.py --source-root /path/to/full/AquaSpatial
 ```
 
-Validate all image pairs, checksums, JSON alignment, depth bit depth, and README links with:
+Validate all image pairs, checksums, JSON alignment, depth encoding, and README links with:
 
 ```bash
 python scripts/validate_preview.py
